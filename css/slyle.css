@@ -90,42 +90,111 @@ h6 {
 
 /*--------------------*/
 body {
-	max-width: 1470px;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 160%;
 }
 .wrapper {
-	max-width: 1470px;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 /*---------HEADER-----------*/
 .header {
-	height: 900px;
-	padding: 0px 15px;
+	max-width: 1440px;
+	padding: 0px 0px 0px 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 10;
 	margin: 0 auto;
-	position: relative;
-	background-color: #6257fe;
-}
-.header__head {
-	position: absolute;
-	top: 0;
-	left: 0;
 }
 .header__logo {
+	display: inline-flex;
+	margin-top: 15px;
+	max-width: 92px;
+	max-height: 40px;
+	z-index: 10;
 }
 .header__logo-icon {
-	display: inline-flex;
+	width: 40px;
+	height: 40px;
 }
 .header__logo-text {
-	display: inline-flex;
+	margin-left: 10px;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #ffffff;
+	text-emphasis-position: center;
 }
+
 .header__social {
+	display: inline-flex;
+	padding: 22px 23px 21px;
+	background-color: #6257fe;
+	z-index: 10;
 }
-.header__textbox {
+.header__social a {
+	height: 21px;
+	width: 21px;
 }
-.textbox {
+.header__social a:not(:last-child) {
+	margin-right: 25px;
 }
-.textbox__part {
+
+.preview {
+	max-width: 1440px;
+	display: flex;
+	margin: -64px auto;
 }
-.textbox__title {
+.preview__contentbox {
+	display: inline-flex;
+	width: 595px;
+	background-color: #6257fe;
+	padding: 0px 0px 0px 15px;
 }
-.textbox__subtitle {
+.contentbox {
+}
+.contentbox__conteiner {
+	max-width: 393px;
+	margin: 255px auto 0px;
+	color: #ffffff;
+	padding: 5px;
+}
+.contentbox__part {
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 7px;
+}
+.contentbox__title {
+	font-family: "Overpass";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 71px;
+	margin-bottom: 30px;
+}
+.contentbox__subtitle {
+	font-size: 20px;
+	line-height: 32px;
+	margin-bottom: 67px;
+}
+.preview-button {
+	padding: 19px 46px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
+	color: #100c46;
+	background: #ffffff;
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+}
+.preview__imag {
+	display: inline-flex;
+	max-width: 58%;
 }
 /*--------------------*/
