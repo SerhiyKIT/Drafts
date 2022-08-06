@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 160%;
+}
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+/*---------HEADER-----------*/
+.header {
+	max-width: 1440px;
+	padding: 0px 0px 0px 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 10;
+	margin: 0 auto;
+}
+.header__logo {
+	display: inline-flex;
+	margin-top: 15px;
+	max-width: 92px;
+	max-height: 40px;
+	z-index: 10;
+}
+.header__logo-icon {
+	width: 40px;
+	height: 40px;
+}
+.header__logo-text {
+	margin-left: 10px;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #ffffff;
+	text-emphasis-position: center;
+}
+
+.header__social {
+	display: inline-flex;
+	padding: 22px 23px 21px;
+	background-color: #6257fe;
+	z-index: 10;
+}
+.header__social a {
+	height: 21px;
+	width: 21px;
+}
+.header__social a:not(:last-child) {
+	margin-right: 25px;
+}
+
+.preview {
+	max-width: 1440px;
+	display: flex;
+	margin: -64px auto;
+}
+.preview__contentbox {
+	display: inline-flex;
+	width: 595px;
+	background-color: #6257fe;
+	padding: 0px 0px 0px 15px;
+}
+.contentbox {
+}
+.contentbox__conteiner {
+	max-width: 393px;
+	margin: 255px auto 0px;
+	color: #ffffff;
+	padding: 5px;
+}
+.contentbox__part {
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 7px;
+}
+.contentbox__title {
+	font-family: "Overpass";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 71px;
+	margin-bottom: 30px;
+}
+.contentbox__subtitle {
+	font-size: 20px;
+	line-height: 32px;
+	margin-bottom: 67px;
+}
+.preview-button {
+	padding: 19px 46px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
+	color: #100c46;
+	background: #ffffff;
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+}
+.preview__imag {
+	display: inline-flex;
+	max-width: 58%;
+}
+/*--------------------*/
