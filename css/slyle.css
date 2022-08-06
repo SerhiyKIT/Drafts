@@ -145,7 +145,7 @@ body {
 	margin-right: 25px;
 }
 /*----------PREVIEW----------*/
-.preview {
+@m .preview {
 	max-width: 1440px;
 	display: flex;
 	margin: -64px auto;
