@@ -462,6 +462,7 @@ body {
 
 	color: #100c46;
 }
+
 .servicesbox__part {
 	color: #100c46;
 }
@@ -471,6 +472,10 @@ body {
 .servicesbox__content-block {
 	display: inline-flex;
 	flex-wrap: wrap;
+}
+.services__conteiner-content {
+	display: grid;
+	grid-template-columns: auto auto;
 }
 .servicesbox__content {
 	max-width: 300px;
@@ -506,10 +511,11 @@ body {
 	background-color: #6257fe;
 }
 .services__imag-portrait {
-	max-width: 427px;
+	height: 569px;
 	top: 166px;
 	right: 39%;
 	z-index: 15;
+	object-fit: none;
 }
 .services__imag-phone {
 	max-width: 342px;
@@ -518,8 +524,9 @@ body {
 	margin-bottom: -23px;
 	z-index: 16;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
 	.services__imag-portrait {
+		width: 100%;
 		top: 25px;
 		right: 0px;
 	}
@@ -538,34 +545,36 @@ body {
 @media (max-width: 767px) {
 	.services {
 		display: grid;
-		height: 100%;
+		text-align: center;
 	}
 	.servicesbox__conteiner {
 		margin: 25px auto 0px;
 	}
 	.servicesbox__content {
-		display: flexbox;
 		max-width: 90%;
-	}
-	.servicesbox__content img {
-		display: none;
+		margin: 0 auto;
 	}
 	.servicesbox__uptitel {
 	}
-	.servicesbox__uptitel img {
-		display: inline-flex;
+	.servicesbox__uptitel span {
+		min-width: 200px;
 	}
 	.services__line {
-		display: none;
+		display: flex;
+		max-width: 77px;
+		flex: 1 1 auto;
 	}
 	.services__imag {
-		min-height: 300px;
+		min-height: 400px;
 	}
 	.services__imag-portrait {
-		top: 0;
-		left: 0;
+		position: static;
+		max-height: 400px;
+		object-fit: contain;
 	}
 	.services__imag-phone {
+		position: static;
+		max-height: 100%;
 		top: 0;
 		right: 0;
 	}
