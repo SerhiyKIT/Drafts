@@ -13,19 +13,19 @@
 
 <body>
 	<main class="wrapper">
-		<div class="header">
+		<header class="header">
 			<div class="header__logo">
 				<div class="header__logo-icon">
-					<img src="imag/Logo.svg" alt="Dash">
+					<img src="img/Logo.svg" alt="Dash">
 				</div>
 				<h1 class="header__logo-text"> DEEP <span>dash</span></h1>
 			</div>
 			<div class="header__social">
-				<a href="https://www.facebook.com/" target="_blank"><img src="imag/Facebook.svg" alt="Facebook"></a>
-				<a href="https://twitter.com/" target="_blank"><img src="imag/Twitter.svg" alt="Twitter"></a>
-				<a href="https://www.instagram.com/" target="_blank"><img src="imag/Instagram.svg" alt="Instagram"></a>
+				<a href="https://www.facebook.com/" target="_blank"><img src="img/Facebook.svg" alt="Facebook"></a>
+				<a href="https://twitter.com/" target="_blank"><img src="img/Twitter.svg" alt="Twitter"></a>
+				<a href="https://www.instagram.com/" target="_blank"><img src="img/Instagram.svg" alt="Instagram"></a>
 			</div>
-		</div>
+		</header>
 		<section class="preview">
 			<div class="preview__contentbox contentbox">
 				<div class="previewbox__conteiner contentbox__conteiner">
@@ -39,8 +39,8 @@
 					<button class="preview-button" type="submit">Get Started</button>
 				</div>
 			</div>
-			<div class="preview__imag imag-content">
-				<img src="imag/preview_imag.jpg" alt="">
+			<div class="preview__img img-content">
+				<img src="img/preview_img.jpg" alt="">
 			</div>
 		</section>
 		<section class="about">
@@ -59,13 +59,98 @@
 					</h3>
 				</div>
 			</div>
-			<div class="about__imag imag-content">
-				<img src="imag/about_imag.jpg" alt="">
+			<div class="about__img img-content">
+				<img src="img/about_img.jpg" alt="">
+			</div>
+		</section>
+		<section class="services">
+			<div class="services__contentbox contentbox">
+				<div class="servicesbox__conteiner contentbox__conteiner">
+					<div class="about__conteiner-text">
+						<h4 class="aboutbox__part contentbox__part">What we do
+						</h4>
+						<h2 class="aboutbox__title contentbox__title">Our Servicesy</h2>
+					</div>
+					<div class="services__conteiner-content">
+						<div class="servicesbox__content">
+							<img src="img/icon/icon-volume.svg" alt="">
+							<h3 class="servicesbox__uptitel">
+								<div class="services__line"></div> <span> Online Marketing</span>
+							</h3>
+							<h3 class="servicesbox__subtitle contentbox__subtitle">
+								The internet has transformed business marketing. It is the heart of our company.
+							</h3>
+						</div>
+						<div class="servicesbox__content">
+							<img src="img/icon/icon-layout.svg" alt="">
+							<h3 class="servicesbox__uptitel">
+								<div class="services__line"></div> <span> Web Development</span>
+							</h3>
+							<h3 class="servicesbox__subtitle contentbox__subtitle">
+								Web development is the work involved in developing a Web site for the Internet.
+							</h3>
+						</div>
+						<div class="servicesbox__content">
+							<img src="img/icon/icon-heart.svg" alt="">
+							<h3 class="servicesbox__uptitel">
+								<div class="services__line"></div> <span> Website Design</span>
+							</h3>
+							<h3 class="servicesbox__subtitle contentbox__subtitle">
+								Web design refers to the design of websites that are displayed on the internet.
+							</h3>
+						</div>
+						<div class="servicesbox__content">
+							<img src="img/icon/icon-search.svg" alt="">
+							<h3 class="servicesbox__uptitel">
+								<div class="services__line"></div> <span> SEO Optimization</span>
+							</h3>
+							<h3 class="servicesbox__subtitle contentbox__subtitle">
+								SEO is the process of improving the quality and quantity of website traffic to a website.
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="services__img">
+				<img class="services__img-portrait" src="img/services_img.jpg" alt="">
+				<img class="services__img-phone" src="img/phone.png" alt="">
+			</div>
+			</div>
+		</section>
+		<section class="portfolio">
+			<div class="portfolio__contentbox">
+				<div class="portfolio__conteiner-text">
+					<h4 class="portfolio__part contentbox__part">Our works
+					</h4>
+					<h2 class="portfolio__title contentbox__title">Portfolio</h2>
+				</div>
+				<div class="portfolio__slider">
+					<div class="slider">
+						<div class="slider__item filter">
+							<img src="img/slides/01.jpg" alt="">
+						</div>
+						<div class="slider__item">
+							<img src="img/slides/02.jpg" alt="">
+						</div>
+						<div class="slider__item filter">
+							<img src="img/slides/03.jpg" alt="">
+						</div>
+						<div class="slider__item">
+							<img src="img/slides/04.jpg" alt="">
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
-	<header>
-	</header>
+	<footer>
+	</footer>
+	<!-- Подключаем jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- Подключаем слайдер Slick -->
+	<script src="js/slick.min.js"></script>
+	<!-- Подключаем файл скриптов -->
+	<script src="js/script.js"></script>
 </body>
 
 </html>
