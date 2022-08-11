@@ -193,7 +193,7 @@ h6 {
 	.background {
 		position: relative;
 		height: 100%;
-		background-image: linear-gradient(#ff9d2f, #ff6126);
+		background-imge: linear-gradient(#ff9d2f, #ff6126);
 	}
 
 	.block {
@@ -309,21 +309,21 @@ body {
 	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
 	border-radius: 3px;
 }
-.imag-content {
+.img-content {
 	display: flex;
 	flex: 1 1 auto;
 	position: relative;
 }
-.preview__imag {
+.preview__img {
 	max-width: 845px;
 	max-height: 900px;
 }
 
-.imag-content img {
+.img-content img {
 	position: absolute;
 	object-fit: none;
 }
-.preview__imag img {
+.preview__img img {
 	top: 0px;
 	left: 0px;
 	z-index: 1;
@@ -357,10 +357,10 @@ body {
 	.contentbox__subtitle {
 		margin-bottom: 20px;
 	}
-	.imag-content {
+	.img-content {
 		min-height: 300px;
 	}
-	.imag-content img {
+	.img-content img {
 		object-fit: cover;
 		width: 100%;
 	}
@@ -392,10 +392,10 @@ body {
 }
 .aboutbox__subtitle {
 }
-.about__imag {
+.about__img {
 	position: relative;
 }
-.about__imag img {
+.about__img img {
 	display: block;
 	width: 100%;
 	height: 600px;
@@ -406,7 +406,7 @@ body {
 	z-index: 6;
 }
 @media (max-width: 1300px) {
-	.about__imag img {
+	.about__img img {
 		width: 112%;
 		right: 0px;
 	}
@@ -419,7 +419,7 @@ body {
 	.aboutbox__conteiner {
 		margin: 255px 0px 0px 0px;
 	}
-	.about__imag img {
+	.about__img img {
 		width: 100%;
 		right: 0px;
 	}
@@ -435,7 +435,7 @@ body {
 	.aboutbox__conteiner {
 		margin: 25px auto 0px;
 	}
-	.about__imag img {
+	.about__img img {
 		height: 100%;
 		top: 0;
 		right: 0;
@@ -457,10 +457,7 @@ body {
 	background-color: #ffffff;
 }
 .servicesbox__conteiner {
-	max-width: 660px;
 	max-height: 100%;
-
-	color: #100c46;
 }
 
 .servicesbox__part {
@@ -475,9 +472,10 @@ body {
 }
 .services__conteiner-content {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 300px 300px;
 }
 .servicesbox__content {
+	background-color: #ffffff;
 	max-width: 300px;
 }
 .servicesbox__uptitel {
@@ -505,36 +503,36 @@ body {
 	font-size: 22px;
 	line-height: 32px;
 }
-.services__imag {
+.services__img {
 	height: 100%;
-	min-width: 33%;
+	max-width: 41.4%;
 	background-color: #6257fe;
 }
-.services__imag-portrait {
-	height: 569px;
-	top: 166px;
-	right: 39%;
+.services__img-portrait {
+	max-width: 100%;
 	z-index: 15;
-	object-fit: none;
+	top: 50px;
+	left: -50px;
 }
-.services__imag-phone {
-	max-width: 342px;
-	bottom: 0px;
-	right: 20px;
-	margin-bottom: -23px;
+.services__img-phone {
+	max-width: 100%;
+	top: -80px;
+	left: 40px;
 	z-index: 16;
 }
-@media (max-width: 1300px) {
-	.services__imag-portrait {
-		width: 100%;
-		top: 25px;
-		right: 0px;
+@media (min-width: 1240px) {
+	.services__img-portrait {
+		object-fit: contain;
+		position: relative;
 	}
-	.services__imag-phone {
-		bottom: 0px;
-		right: 0px;
-		margin-bottom: -50px;
-		z-index: 16;
+	.services__img-phone {
+		object-fit: contain;
+		position: relative;
+	}
+}
+@media (max-width: 1100px) {
+	.services__img-phone {
+		max-height: 100%;
 	}
 }
 @media (max-width: 1000px) {
@@ -545,14 +543,20 @@ body {
 @media (max-width: 767px) {
 	.services {
 		display: grid;
+		grid-template-rows: auto 400px;
 		text-align: center;
+	}
+	.services__contentbox {
 	}
 	.servicesbox__conteiner {
 		margin: 25px auto 0px;
 	}
 	.servicesbox__content {
-		max-width: 90%;
 		margin: 0 auto;
+	}
+	.services__conteiner-content {
+		display: inline-flex;
+		flex-wrap: wrap;
 	}
 	.servicesbox__uptitel {
 	}
@@ -560,22 +564,164 @@ body {
 		min-width: 200px;
 	}
 	.services__line {
-		display: flex;
 		max-width: 77px;
 		flex: 1 1 auto;
 	}
-	.services__imag {
-		min-height: 400px;
+	.services__img {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		max-height: 400px;
 	}
-	.services__imag-portrait {
-		position: static;
+	.services__img-portrait {
 		max-height: 400px;
 		object-fit: contain;
 	}
-	.services__imag-phone {
-		position: static;
+	.services__img-phone {
 		max-height: 100%;
-		top: 0;
-		right: 0;
+		object-fit: contain;
 	}
+}
+/*--------PORTFOLIO------------*/
+.portfolio {
+	max-width: 1440px;
+}
+.portfolio__contentbox {
+	margin: 0 auto;
+}
+.portfolio__conteiner-text {
+}
+.portfolio__part {
+}
+.contentbox__part {
+}
+.portfolio__title {
+}
+.contentbox__title {
+}
+.portfolio__slider {
+	height: 100%;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width: 767px) {
+	.portfolio__slider {
+		padding: 50px 10px;
+	}
+}
+
+/*-------SLICK-------------*/
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+
+/* Точки */
+.slick-dots {
+}
+.slick-dots li {
+}
+.slick-dots button {
+}
+
+/* Конкретный слайдер */
+.slider {
+	position: relative;
+	padding: 0px 60px;
+}
+
+@media (max-width: 767px) {
+	.slider {
+		padding: 0px 40px;
+	}
+}
+
+.slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.slider .slick-arrow.slick-prev {
+	left: 0;
+	background: url("../img/sl-arrow_l.svg") 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+	right: 0;
+	background: url("../img/sl-arrow_r.svg") 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-disabled {
+	opacity: 0.2;
+}
+
+.slider .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li {
+	list-style: none;
+	margin: 0px 10px;
+}
+.slider .slick-dots button {
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #6257fe;
+	border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button {
+	background-color: transparent;
+	border: 1px solid #100c46;
+}
+
+.slider__item {
+	padding: 0px 15px;
+}
+.slider__item img {
+	max-width: 100%;
+}
+.slider__item.slick-center {
 }
