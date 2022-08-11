@@ -618,7 +618,7 @@ body {
 /*-------TEAM-------------*/
 .team {
 	max-width: 1440px;
-	margin-top: 176px;
+	margin: 176px 0px 100px;
 }
 .team__contentbox {
 	text-align: center;
@@ -690,4 +690,115 @@ body {
 	.content__item-social {
 		display: none;
 	}
+}
+/*-------CONTACT-------------*/
+.contact {
+	display: grid;
+	max-width: 1440px;
+	height: 900px;
+	margin: 0 auto;
+	grid-template-columns: 760px auto;
+	padding: 0px 45px;
+}
+.contact__contentbox {
+	max-width: 450px;
+	background-color: #ffffff;
+}
+.contact__conteiner {
+}
+.contentbox__conteiner {
+}
+.contact__conteiner-text {
+}
+.contactbox__part {
+}
+.contactbox__title {
+}
+.contact__form {
+	display: grid;
+}
+input {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 160%;
+	color: rgba(16, 12, 70);
+	background-color: #f4f3ff;
+	height: 90px;
+	width: 443px;
+	margin-bottom: 18px;
+	padding: 7px 19px;
+}
+.input-name {
+}
+.input-email {
+}
+.input-phone {
+}
+.input-subject {
+	height: 205px;
+	width: 443px;
+}
+.contact__button {
+	width: 192px;
+	height: 70px;
+	background: #6257fe;
+	box-shadow: 0px 10px 30px rgba(98, 87, 254, 0.3);
+	border-radius: 3px;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
+}
+.contact__location {
+	background-color: #6257fe;
+}
+.contact__location-maps {
+	top: 142px;
+	left: -228px;
+}
+.contact__location-maps iframe {
+	height: 617px;
+	width: 553px;
+}
+.contact__location-text {
+	max-width: 150px;
+	color: #ffffff;
+	top: 232px;
+	right: 85px;
+}
+@media (min-width: 1200px) {
+	.contact__location {
+		position: relative;
+	}
+	.contact__location-maps {
+		position: absolute;
+	}
+	.contact__location-text {
+		position: absolute;
+	}
+}
+.item__location:not(:last-child) {
+	margin-bottom: 30px;
+}
+.text__location {
+}
+.text__location-item {
+}
+.item__location {
+}
+.item__location-contaimer {
+}
+.item__location-phone1 {
+}
+.item__location-phone2 {
+}
+.text__location-email {
+}
+.item__location-email {
+}
+.text__location-address {
+}
+.item__location-address {
 }
