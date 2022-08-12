@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 	$('.slider').slick({
 		arrows:true,
 		dots:true,
@@ -29,3 +29,16 @@ $(document).ready(function(){
 	});
 });
 
+let pbtn = document.querySelector('.preview-button');
+let cel = document.querySelector('.contact__conteiner');
+
+pbtn.addEventListener('click', function () {
+    cel.scrollIntoView(true);
+});
+
+let fbtn = document.querySelector('.footer__button');
+let hel = document.querySelector('header');
+
+fbtn.addEventListener('click', function () {
+    hel.scrollIntoView(true);
+});
