@@ -735,7 +735,7 @@ input {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 32px;
-	transition: background-color 0.5s ease 0s;
+	transition: 0.5s ease 0s;
 }
 .contact__button:hover {
 	background-color: #6257fe;
@@ -828,6 +828,10 @@ textarea input {
 		text-align: center;
 	}
 	.contact__conteiner {
+		margin: 0 auto;
+		display: flexbox;
+		flex: 1 1 auto;
+		margin: 0px 15px;
 	}
 	.contact__form {
 		margin: 0 auto;
@@ -837,24 +841,42 @@ textarea input {
 		background-color: #6257fe;
 		padding-right: 0px;
 		margin: 0 auto;
+		display: inline-flex;
+		flex: 1 1 auto;
+		flex-wrap: wrap;
+	}
+	.contact__location-maps {
+		width: 100%;
+		margin: 0 auto;
 	}
 	.contact__location-maps iframe {
 		max-height: 100%;
-		max-width: 100%;
 		margin: 0 auto;
 	}
 	.contact__location-text {
-		display: grid;
-		margin: 20px auto;
+		display: flexbox;
+		flex: 1 1 auto;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		text-align: center;
 		width: 95%;
-		grid-template-columns: 300px;
 	}
 	.contact__button {
 		width: 75%;
 		margin: 0 auto;
 	}
 	.text__location {
-		margin: 0 15px;
+		margin: 0 auto;
+	}
+	.item__location {
+		display: flexbox;
+		flex: 1 1 auto;
+	}
+	.input-subject {
+		display: block;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		resize: none;
 	}
 }
 .item__location:not(:last-child) {
