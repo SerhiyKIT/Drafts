@@ -725,6 +725,10 @@ input {
 .input-subject {
 	height: 205px;
 }
+.contact__error {
+	color: red;
+	line-height: 32px;
+}
 .contact__button {
 	width: 192px;
 	height: 70px;

@@ -222,16 +222,15 @@
 						</h4>
 						<h2 class="contactbox__title contentbox__title">Contact us</h2>
 					</div>
-					<form class="contact__form" action="#" method="post">
-						<input id="name" type="text" name="form[name]" data-error="Error" placeholder="Name"
-							class="input-name">
-						<input id="e-mail" type="text" name="form[email]" data-error="Error" placeholder="E-mail"
+					<form id="contactForm" class="contact__form">
+						<input id="name" type="text" name="name" data-error="Error" placeholder="Name" class="input-name">
+						<input id="e-mail" type="text" name="email" data-error="Error" placeholder="E-mail"
 							class="input-email">
-						<input id="phone" type="tel" name="form[phone]" data-error="Error" placeholder="Phone"
-							class="input-phone">
-						<input id="subject" type="text" name="form[subject]" data-error="Error" placeholder="Subject"
+						<input id="phone" type="tel" name="phone" data-error="Error" placeholder="Phone" class="input-phone">
+						<input id="subject" type="text" name="subject" data-error="Error" placeholder="Subject"
 							class="input-subject">
-						<button type="submit" class="contact__button">Get Started</button>
+						<div class="contact__error" id="error"></div>
+						<button type="submit" name="submit" class="contact__button">Get Started</button>
 					</form>
 				</div>
 			</div>
